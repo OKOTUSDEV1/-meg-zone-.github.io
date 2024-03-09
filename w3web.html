@@ -1,0 +1,335 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <! <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+* {
+  box-sizing:border-box ;
+  background-color: midnightblue;
+  
+  
+}
+.menu {
+  float: left;
+  width: 100%;
+}
+.menuitem {
+  padding: 10px;
+  margin-top: 12px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: initial;
+  width: 90%;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 5px 5px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:1000px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+  .menu, .main, .right .ant .meg {
+    width: 130%;
+  }
+}
+
+.crop{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  object-fit: contain;
+  
+
+}
+ h1{ 
+            color:green; 
+        } 
+        .gfg { 
+            display: block; 
+            position: absolute; 
+            width: 100px; 
+            height: 10px; 
+            left: calc(58% - 5em); 
+            transform-origin: 1px 10px; 
+            animation: rotate; 
+            animation-iteration-count: infinite; 
+            animation-duration: 2.8s; 
+        } 
+  
+        .gfg { 
+            display: block; 
+            position: absolute; 
+            width: 10px; 
+            height: 10px; 
+            left: calc(50% - 1em); 
+            border-radius: 1em; 
+            transform-origin: 1em 2em; 
+            animation: rotate; 
+            animation-iteration-count: infinite; 
+            animation-duration: 1.8s; 
+        } 
+  
+        /* Rotation of loader dots */ 
+        @keyframes rotate { 
+            from { 
+                transform: rotateZ(0deg); 
+            } 
+            to { 
+                transform: rotateZ(360deg); 
+            } 
+        } 
+        .g1 { 
+            animation-delay: 0.1s; 
+            background-color: pink; 
+  
+        } 
+        .g2 { 
+            animation-delay: 0.2s; 
+            background-color: #239B56; 
+        } 
+        .g3 { 
+            animation-delay: 0.3s; 
+            background-color: red; 
+        } 
+        .g4 { 
+            animation-delay: 0.4s; 
+            background-color: yellow ; 
+        } 
+        .g5 { 
+            animation-delay: 0.5s; 
+            background-color: magenta; 
+        }
+        .video{
+          float: left;
+        } 
+        .ANT{ 
+               background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEXk6UD359Ahhwue2JEVbAudcYjtFK0_dQ8w&usqp=CAU");
+               background-size: cover;
+               background-repeat: no-repeat;
+               text-align: center;
+               padding: 5px;
+               width: 100%;
+               
+            }
+            .Meg{
+                width: 600px;
+                height: 600px;
+                background-color: blue;
+                color: white;
+                font-size: x-large;
+                text-align: center;
+                font-style: italic;
+            }
+ 
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div class=".container bg-success">
+  <img src="https://lh3.googleusercontent.com/-QBzJo1Qu0_k/ZVBbzUci3SI/AAAAAAAAAQY/lwAyX3KpVd8D4Rz8Nr5WCmK2OpsyalJwgCEwYBhgLKvQEAPYkdFufke8bmrB94IT8qWmvpwTLHvzlL1YgMluliJhm1rBL4kvRiDFmtDxTeOJmhDIhK4Jd5zwq3jhaNbJIeGaJn6lfUPQxNv2iPhfJSL1V_Y8krG2s4vN53mcf9FvwAfcdC-ROQK8dMrW4ZL_CkPEqkJuUp9es5pBpPndrY1hhHKmH7t8uoIGPDolwq-0_8r6mP8-VMuC2C9CZFFVNiVWgNzFP2Oni51j7QWPOv93ygMuvagf4sELVkimoCxCfDZR6cYRZ8ToBAuFYkTS0TxCRzYnQL5Pc3-B983P6ODxyjgTdCobOS6UJqBO5O0aj6pJdZR_zk2WivB9w7TRSsEEaN4OeivjO8SuhrUHVleiTfJp4DQFt6YirrzVzDblbRS12J46MOa72vairG8teDSh1bQXTupvW6d1yogTEiJV-UxON_bklh-ZC7SjvwUyo8drIe9u9-N2Gz9wo8Zl7E_a8Wt3WUsqVJVA4IpHST7zTdYKjj6nj_Heh45EzcIl3Op3n19rCI-2uk9VUqFWiSAObLuWDAchOqxBthPv0xnKQVz5oGK6Jp5GKr2Xz77GEcvdJzDDatiAsP6aISg6d7PzCFGo01cPN4bwYJJEc0I51ZZM0CngLzym080Egf7Bq6YQcXGgW1pyBNRSYZdYM7odiKZ28pjB1bxaFxmB7VDXZo1h-SINosFkPvd14EYXdDmL0SthmZK3kY-mYMVgT0SHp1i1JrfPWPooQtXoChzevIt1d0yrGSkl51xdptJH5v2zNw1gBiQmvJ-BEeKYjhYQRB2DWMIlgYPFGTqWC9TuOnqgd63B4kWk1YQB0Q8c7YdqgDjDG1tuqBg/w140-h131-p/IMG_20231108_193350_411.jpgss" style="width: 100%;">
+  <div class='loader'> 
+    <div class='gfg g1'></div> 
+    <div class='gfg g2'></div> 
+    <div class='gfg g3'></div> 
+    <div class='gfg g4'></div> 
+    <div class='gfg g5'></div> 
+  </div>
+  </div>
+  <h1 style="font-size: 70px; text-align: center; color: aqua;  green; object-fit: cover;">MEG-ZONE <b style="color:skyblue;">INTERNATIONAL</b> SCHOOL</h1>
+  <h4><i style="color: coral;">#25 Grace Avenue Omachi by Maris Close.</i></h4>
+  <h5><i style="color: rgb(247, 149, 113);">phone:08034689145, 08034356596</i></div>
+      <h1></h1> 
+      <h4></h4>  
+</div>    
+    <a href="C:\Users\USER\Documents\fees.html">fees</a>
+    <button type="button">History</button>
+    <div class="container-fluid p-5">
+      <h2 style="color: aqua;"></h2>
+      <a href="#Iemo" class="btn btn-primary" data-bs-toggle="collapse">Gallery</a>
+      <div id="Iemo" class="collapse">
+
+        <img src="c:\Users\USER\Pictures\IMG-20230925-WA0005.jpg" style= "width:45%" >
+        <img src="c:\Users\USER\Pictures\IMG_20231016_141839.jpg" style="width: 45%">
+        <img src="c:\Users\USER\Pictures\interhouse.jpg" style="width: 45%;">
+        <img src="c:\Users\USER\Pictures\kit.jpg" style="width: 45%; left: 45%;" >
+        <img src="c:\Users\USER\Pictures\yes.jpg" style="width: 45%;"> 
+        <img src="c:\Users\USER\Pictures\IMG-20240218-WA0011.jpg" style="width: 45%">
+        <img src="c:\Users\USER\Pictures\IMG-20240215-WA0043.jpg" style="width: 45% ;">
+    </div>
+       
+   
+    <a href="C:\Users\USER\Documents\full reg.html">Regiteration</a>
+    <div class="container-fluid p-5">
+      <h2 style="color: aqua;"></h2>
+      <a href="#Gemo" class="btn btn-primary" data-bs-toggle="collapse">School Anthem</a>
+      <div id="Gemo" class="collapse">
+        <div class="ANT"> 
+          <h1 style="color:skyblue; font-size: 65px;text-shadow:  coral;">MEG-ZONE <b style="color: skyblue;">INTERNATIONAL</b> SCHOOL ANTHEM </h1>
+          <h3 style="font-size: 60px; color: white">We shall overcome!, we shall overcome!!, we shall overcome someday eh eh ehh!!!, right in our heart, I do believe, we shall overcome someday!!!</h3>
+          </div>
+      </div>
+
+
+          <div class="container-fluid p-5">
+      <h2 style="color: aqua; text-shadow:  yellow;">click the button to see main site</h2>
+      <a href="#demo" class="btn btn-primary" data-bs-toggle="collapse">school site</a>
+      <div id="demo" class="collapse">
+    
+    <script>
+      document.getElementById("demo").addEventListener("click", myFunction);
+      
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "MEG-ZONE INTERNATIONAL SCHOOL is a good school with learning materials and qualify Teacher who are trained on how to impart knowledge into your child / ward.We have have good learning environment, sport equipments,chemistry and physics laboratries, computer lab etc. just for your child to meet up with this current computer age era. You can contact us on the address one head of this website.";
+      } 
+    </script>
+    <select style="font-size:large; color: yellow; border-left: 2px solid red;">
+        <option>CLASSES</option>
+        <option>Prenusery</option>
+        <option>Nusery 1</option>
+        <option>Nusery 2</option>
+        <option>Nusery 3</option>
+        <option>basic 1</option>
+        <option>Basic 2</option> 
+        <option>Basic 3</option>
+        <option>Basic 4</option>
+        <option>Basic 5</option>
+        <option>JSS 1</option>
+        <option>JSS 2</option>
+        <option>JSS 3</option>
+        <option>SSS 1</option>
+        <option>SSS 2</option>
+        <option>SSS 3</option>
+
+    </select>
+  
+  <p id="demo">School anthem</p>
+  <script>
+  document.getElementById("demo").addEventListener("click", myFunction);
+  
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "We shall overcome!, we shall overcome!!, we shall overcome someday eh eh ehh!!!, right in our heart, we do believe, we shall overcome someday!!! ";
+  }
+  </script>
+  
+
+  <div class=".container-fluid p-5">
+    <h style="color: magenta;">Hurray!</h2>
+    <p style="color:yellow">The management welcomes you to <b style="color: magenta;">Meg-zone international school</b>. We are to giving your child/ward a sound and contemporary quality education, just rush down to to the afformentioned address to register your hope career.</p>
+    <img src="https://lh3.googleusercontent.com/-QBzJo1Qu0_k/ZVBbzUci3SI/AAAAAAAAAQY/lwAyX3KpVd8KHq4n6fEtftc8MX3UIRfrwCEwYBhgLKuUEAPYkdFvN3wZ7O6Xax8SIc24RjJIJPmza_IOxLFnQ84TRREcNXMGdtypc2thyxd1VSpMj095uU_-fsVOMeznsZUwOMxTH_FtaRP8V4QI6hr1xnwdrGgTuy-tjTfwqJ0aAmqJJqtZIy3UdvKmS-YWzD1PtEXwiXVlokeStbIUoKfexlJKUaskl4x0wVwVjobccZHQrNg38FuiYC_zGmSNB9CxmLPz27fpgf9P7cJnMXyeftn1WKYkju6HzO5b1Q_HEIFcY-IaTMOMR6B4FSiLtvChFmB3lB-7BQUwIajAp5QKKm3KY6X1eVvSTpey8rRFSODEclMJE_Km2u60zQlIQDbs5rUEO9cND_YuiyBBBBRK-ckQZ33TtNJk8XOcM4056PIhwrvPKyUZR_wbLBZTD47mIsbkgpAE5mjpOxdo36bea6OTMiK3SOeuKeXE_mQBcE9nbtP5pmiaD3liN-ASklOuf0PqugaY7u0lfBgNLQ0PdMZJEbJXBwU5WVZ38_lLZNEJLc3Tmzojka6a_AQQSwS6RgOL8ZH6Ng1fZpJBFhFZFHZupBEcaiObm7fd-POme9f0HLLbILpzrlC6lB9gExB8liN4jnt_Y4OchgY9Io8ESf-5NEJuBNPSm6s-VeVFWfYKlql0Eu0TJ3p5-Cz5yrxl6VsSJ_wjLnXtvu5P-vmVqVTqiCVTr3qFKZWju-zRd-QCL61zuVBtu3ncECJOQcOJtszsOTKu1QD2HrUIBFfirkx55xwnoe68VWw5MueojZENB-c4qN5RL787QPAOXARxKlGqzodfghiH_E2fLWUHtFoQnGDDcoduqBg/w140-h131-p/IMG_20231108_193350_411.jpg"  style="width:50%; ">
+    <img src="https://lh3.googleusercontent.com/-9e9LW1SQZZ8/ZVBbUeLJOzI/AAAAAAAAAQQ/PsYu5oxKvRUMUyYt9eW35zSfX5y3UrX5wCEwYBhgLKvQEAPYkdFuDXHfZ6b2-TIXsvucoIVlwpTwsANUREB06XUiTEeebFxPN7Kkach9trFCe9XW7ojcss668urtUieaUbf32cMZQkesxovIh78Z4UI4xI-9VqmA5NkOC6ZvDjTDyPhm4n00eFHgwz9idQU-7gfxVGot5TitOZ2W4qHSpx3hxpgkgZwr3X-B3DhB2sThCg34v5S6I9BVfXCzHSsGrdtZ2AEo_wGmrY5Xd_kC7ly-3zSS_CQYHXciX3tKv2nYCOkLVgug9I3ZUtpBEpdS9AQfNLWpL9mvD3Qm3uhGJNwFQIlUaTh0FgpHub3BTMP-ARDK6atWG3VryCJFa0EyJNT909Ajp7MN1cQA5KVICz9wPDlqBzPJmVEr98GaHIGbmMq6aDHpmcYL4RWQZ3oog_NXKM-E88RzUZi7GHvLmbxApKZ_Z2WHVC0cIKOoFOiTJEJylvSJO_75PTiHULbGf9-nFmx1BryxRMbEI7X7hmPjJQDCBHQhG-GZ4GvilQPUh86by0NX3fuFMzhDid656P_Us3Bty0RG2UpC7dUAj3qSkgWMBcJM1-1KCEV_k1-kWna4mkzB2CDVC3MQAURA7Om-zEV-artipLFv9vPfiznpz0K6-_zNZJOxDjlWXp9fdYX98JqDL7gc2HKF5XCkCGJMt_kDosi3Jn7h-_p1K_vszzWKIq_BHHLarUk_tMpw0FkXY3tmm3W7BC66NNYBN84ND_m8IIYCGR56UsNcbhI_YypXjtLe-LlLsLzLntvKcZhNO-kn41CXcWcNmt1MZSGs9yX0YrL0dKczno65tVqpx1chLutn5fgLmxVlJTZ47Ca4K6DCbyNuqBg/w140-h140-p/MR.Orji%2BKalu.jpg" class="rounded-circle"  style="width: 50%;">
+    <img src="https://static-cse.canva.com/blob/1145734/TealandYellowFlowersSummerQuotesPoster.jpg" class="rounded-circle" style="float:right;" width="40%">
+   
+  </div>
+
+
+  <div class=".container-fluid p-5">
+    <h2 style="color: magenta;">What?</h2>
+    <p style="color: salmon;">The World Today needs intelligent, creative and productive person for all type work and services, therefor, that child needs a quality education to meet up to needs.</p>
+    <h2 style="color: sandybrown;">Where?</h2>
+    <p style="color: seashell;">Right here at <b style="color: crimson;">MEG-ZONE INTERNATIONAL SCHOOL</b>, just Register your Child/ward and see the change in weeks.</p>
+    <h2 style="color: aqua;">Price?</h2>
+    <p style="color: aqua;">The school reduced the price to an affordable price according to the country's corrent state of economy.</p>
+  </div>
+
+<div class="card" style="width: 120%;">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/-9e9LW1SQZZ8/ZVBbUeLJOzI/AAAAAAAAAQQ/PsYu5oxKvRUMUyYt9eW35zSfX5y3UrX5wCEwYBhgLKvQEAPYkdFuDXHfZ6b2-TIXsvucoIVlwpTwsANUREB06XUiTEeebFxPN7Kkach9trFCe9XW7ojcss668urtUieaUbf32cMZQkesxovIh78Z4UI4xI-9VqmA5NkOC6ZvDjTDyPhm4n00eFHgwz9idQU-7gfxVGot5TitOZ2W4qHSpx3hxpgkgZwr3X-B3DhB2sThCg34v5S6I9BVfXCzHSsGrdtZ2AEo_wGmrY5Xd_kC7ly-3zSS_CQYHXciX3tKv2nYCOkLVgug9I3ZUtpBEpdS9AQfNLWpL9mvD3Qm3uhGJNwFQIlUaTh0FgpHub3BTMP-ARDK6atWG3VryCJFa0EyJNT909Ajp7MN1cQA5KVICz9wPDlqBzPJmVEr98GaHIGbmMq6aDHpmcYL4RWQZ3oog_NXKM-E88RzUZi7GHvLmbxApKZ_Z2WHVC0cIKOoFOiTJEJylvSJO_75PTiHULbGf9-nFmx1BryxRMbEI7X7hmPjJQDCBHQhG-GZ4GvilQPUh86by0NX3fuFMzhDid656P_Us3Bty0RG2UpC7dUAj3qSkgWMBcJM1-1KCEV_k1-kWna4mkzB2CDVC3MQAURA7Om-zEV-artipLFv9vPfiznpz0K6-_zNZJOxDjlWXp9fdYX98JqDL7gc2HKF5XCkCGJMt_kDosi3Jn7h-_p1K_vszzWKIq_BHHLarUk_tMpw0FkXY3tmm3W7BC66NNYBN84ND_m8IIYCGR56UsNcbhI_YypXjtLe-LlLsLzLntvKcZhNO-kn41CXcWcNmt1MZSGs9yX0YrL0dKczno65tVqpx1chLutn5fgLmxVlJTZ47Ca4K6DCbyNuqBg/w140-h140-p/MR.Orji%2BKalu.jpg" alt="Card image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title bg-secondary text-warning">Orji Kalu</h4>
+    <p class="card-text text-warning">sir Orji kalu is the founder of MEG-ZONE INT'L SCHOOL</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+    <div class="container-fluid p-5">
+
+    
+      <button type="button" class="btn btn-primary" id="toastbtn">School anthem</button>
+      
+      <div class="toast">
+        <div class="toast-header">
+          <strong class="me-auto">MEG-ZONE ANTHEM</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          <p style="color: blue; font-size: x-large;">We shall overcome!, we shall overcome!!, we shall overcome someday eh eh ehh!!!, right in our heart, I do believe, we shall overcome someday!!!</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    document.getElementById("toastbtn").onclick = function() {
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList.forEach(toast => toast.show()) 
+    }
+    </script>
+
+<div class="container mt-3 bg-success text-warning">
+  <h2><i>LOG IN</i></h2>
+  <form action="">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3 bg-secondary">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary"><a href="C:\Users\USER\Documents\full reg.html"></a>Submit</button>
+    <p id="demo"></p>
+    <script>
+      const d = new Dew();
+      document.getElementById("demo").innerHTML = d;
+    </script>
+  </form>
+</div>
+<img src="c:\Users\USER\Pictures\IMG-20230925-WA0005.jpg" class="rounded-circle" style= "width:45%" >
+<img src="c:\Users\USER\Pictures\IMG_20231016_141839.jpg" class="rounded-circle" style="width: 45%">
+<img src="c:\Users\USER\Pictures\interhouse.jpg" style="width: 45%; border-radius:  30px 30px 30px 30px;">
+<img src="c:\Users\USER\Pictures\kit.jpg" style="width: 45%; left: 45%;" >
+<img src="c:\Users\USER\Pictures\yes.jpg" style="width: 45%;"> 
+<img src="c:\Users\USER\Pictures\IMG-20240218-WA0011.jpg" style="width: 45%; border-radius: 10px 50px 10px 50px ;" >
+<img src="c:\Users\USER\Pictures\IMG-20240215-WA0043.jpg" style="width: 45% ;">
+
+ 
+  <h1></h1> 
+  <h4></h4> 
+  <div class='loader'> 
+      <div class='gfg g1'></div> 
+      <div class='gfg g2'></div> 
+      <div class='gfg g3'></div> 
+      <div class='gfg g4'></div> 
+      <div class='gfg g5'></div> 
+  </div> 
+ 
+<video width="400px" height="400px" controls="controls">
+  <source src="c:\Users\USER\Downloads\VID_20240214_125019.3gp" type="video/mp4">
+</video>
+  </div>
+     
+</body> 
+        
+</html>
